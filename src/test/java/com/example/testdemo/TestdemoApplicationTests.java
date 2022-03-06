@@ -25,6 +25,8 @@ class TestdemoApplicationTests {
 
         String value = (String) this.redisTemplate.opsForValue().get(key);
 
+        System.out.println("master的更改");
+        System.out.println("第一行");
         System.out.println("dev_yjx的更改");
         System.out.println("dev第一行");
         System.out.println("dev的第二行");
