@@ -23,7 +23,7 @@ class TestdemoApplicationTests {
 
         this.redisTemplate.opsForValue().set(key, "testTemplatevalue1", 1000L, TimeUnit.MILLISECONDS);
 
-        String value = (String) this.redisTemplate.opsForValue().get(key);
+        String value1 = (String) this.redisTemplate.opsForValue().get(key);
 
         System.out.println("master的更改");
         System.out.println("第一行");
@@ -31,5 +31,7 @@ class TestdemoApplicationTests {
         System.out.println("dev第一行");
         System.out.println("dev的第二行");
         System.out.println("feature的第一行");
+        System.out.println("f1111111111111");
+
     }
 }
